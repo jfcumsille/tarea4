@@ -1,0 +1,3 @@
+/home/zuri/2017-2/SO/T4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zuri/2017-2/SO/T4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/zuri/2017-2/SO/T4/cmake-build-debug/CMakeFiles/T4.dir
