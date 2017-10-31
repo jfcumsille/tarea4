@@ -1,8 +1,3 @@
-//
-// Created by zuri on 28-10-17.
-//
-
-
 #include <wchar.h>
 
 typedef struct coords Coords;
@@ -21,7 +16,7 @@ struct board{
 typedef struct board Board;
 
 
-Piece* initPiece(int id, int color, int row, int col);
-Board* initBoard();
-void print_table(Board* tablero);
-wchar_t toASCII(Piece* piece);
+Piece *initPiece(int id, int color, int row, int col);
+Board *initBoard();
+void print_table(Board *tablero);
+wchar_t toASCII(Piece *piece);

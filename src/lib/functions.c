@@ -1,12 +1,9 @@
-//
-// Created by zuri on 28-10-17.
-//
-
 #include <stdlib.h>
+#include <stdio.h>
 #include "functions.h"
 
 Piece* initPiece(int id, int color, int row, int col){
-    Piece* p = malloc(sizeof(Piece));
+    Piece* p = (Piece *)malloc(sizeof(Piece));
     p->id = id;
     p->color = color;
     p->row = row;
@@ -16,7 +13,7 @@ Piece* initPiece(int id, int color, int row, int col){
 
 
 Board* initBoard(){
-    Board *b = malloc(sizeof(Board));
+    Board *b = (Board *) malloc(sizeof(Board));
     Piece* table[8][8];
     Piece* bT1 = initPiece(3, 1, 0, 0);
     Piece* bH1 = initPiece(5, 1, 0, 1);
@@ -68,24 +65,29 @@ Board* initBoard(){
 wchar_t toASCII(Piece* piece){
     wchar_t ascii;
     if (piece->color == 0){
-        if(piece->id == 1) ascii = '256A';
-        else if(piece->id == 2) ascii = '256B';
-        else if(piece->id == 3) ascii = '256C';
-        else if(piece->id == 4) ascii = '256D';
-        else if(piece->id == 5) ascii = '256E';
-        else ascii = '256F';
+        if(piece->id == 1) ascii = L'\u256A';
+        else if(piece->id == 2) ascii = L'\u256B';
+        else if(piece->id == 3) ascii = L'\u256C';
+        else if(piece->id == 4) ascii = L'\u256D';
+        else if(piece->id == 5) ascii = L'\u256E';
+        else ascii = L'\u256F';
     }
     else{
-        if(piece->id == 1) ascii = '2564';
-        else if(piece->id == 2) ascii = '2565';
-        else if(piece->id == 3) ascii = '2566';
-        else if(piece->id == 4) ascii = '2567';
-        else if(piece->id == 5) ascii = '2568';
-        else ascii = '2569';
+        if(piece->id == 1) ascii = L'\u2564';
+        else if(piece->id == 2) ascii = L'\u2565';
+        else if(piece->id == 3) ascii = L'\u2566';
+        else if(piece->id == 4) ascii = L'\u2567';
+        else if(piece->id == 5) ascii = L'\u2568';
+        else ascii = L'\u2569';
     }
     return ascii;
 }
 
-void print_table(Board* tablero){
-
+void print_table(Board *tablero){
+  for(int i=0;i<<8;i++){
+    for(int j=0;j<8;j++){
+      wprintf(L"%c", tablero->table[i][j]);
+    }
+    printf("\n");
+  }
 }
