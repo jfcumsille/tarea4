@@ -1,10 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
-<<<<<<< HEAD
 #include <stddef.h>
 #include <locale.h>
-=======
->>>>>>> master
 #include "functions.h"
 
 Piece* initPiece(int id, int color, int row, int col){
@@ -71,20 +68,20 @@ wchar_t toASCII(Piece* piece){
     wchar_t ascii;
     if (piece->color == 0){
 
-        if(piece->id == 1) ascii = L'\x256A';
-        else if(piece->id == 2) ascii = L'\x256B';
-        else if(piece->id == 3) ascii = L'\x256C';
-        else if(piece->id == 4) ascii = L'\x256D';
-        else if(piece->id == 5) ascii = L'\x256E';
-        else ascii = L'\x256F';
+        if(piece->id == 1) ascii = L'\x265A';
+        else if(piece->id == 2) ascii = L'\x265B';
+        else if(piece->id == 3) ascii = L'\x265C';
+        else if(piece->id == 4) ascii = L'\x265D';
+        else if(piece->id == 5) ascii = L'\x265E';
+        else ascii = L'\x265F';
     }
     else{
-        if(piece->id == 1) ascii = L'\x2564';
-        else if(piece->id == 2) ascii = L'\x2565';
-        else if(piece->id == 3) ascii = L'\x2566';
-        else if(piece->id == 4) ascii = L'\x2567';
-        else if(piece->id == 5) ascii = L'\x2568';
-        else ascii = L'\x2569';
+        if(piece->id == 1) ascii = L'\x2654';
+        else if(piece->id == 2) ascii = L'\x2655';
+        else if(piece->id == 3) ascii = L'\x2656';
+        else if(piece->id == 4) ascii = L'\x2657';
+        else if(piece->id == 5) ascii = L'\x2658';
+        else ascii = L'\x2659';
     }
     return ascii;
 }
@@ -92,9 +89,9 @@ wchar_t toASCII(Piece* piece){
 
 void print_table(Board* tablero){
     setlocale(LC_ALL, "en_US.UTF-8");
-    printf("\n\t  ________________________________\n");
+    printf("\n");
+    printf("\t |---|---|---|---|---|---|---|---|\n");
     for(int i=0;i<8;i++){
-        printf("\n");
         printf("\t |");
         for(int j=0;j<8;j++){
             if(!tablero->table[i][j]) printf("   |");
@@ -104,6 +101,7 @@ void print_table(Board* tablero){
             }
         }
         printf("\n");
+        printf("\t |---|---|---|---|---|---|---|---|\n");
     }
-    printf("\t ---------------------------------\n");
+    printf("\n");
 }

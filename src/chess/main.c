@@ -13,10 +13,51 @@
 #define IP "0.0.0.0"
 #define PORT 8080
 
-int main(int argc, char argv[]){
+int main(int argc, char *argv[]){
 
     Board *b = initBoard();
     print_table(b);
+
+
+
+    /*
+    //Elemento 1 de argv será 1 si es server o 0 si es client
+      int socket;
+      if (*argv[1]== '1'){
+        printf("Server\n");
+        socket = initializeServer(IP, PORT);
+        int count = 0;
+        while (count<10) {
+          char* message = malloc(sizeof(char)*1024);
+          char* msg = recieveMessage(socket, message);
+          printf(msg, "%s\n");
+          printf("\nYour Message: ");
+          scanf("%s", msg);
+          printf("\n");
+          sendMessage(socket, msg);
+
+        }
+      }
+
+      else{
+        printf("Client\n");
+        socket = initializeClient(IP, PORT);
+        int count = 0;
+        while (count<10) {
+          char* message = malloc(sizeof(char)*1024);
+          printf("\nYour Message: ");
+          scanf("%s", message);
+          printf("\n");
+          sendMessage(socket, message);
+          char* msg = recieveMessage(socket, message);
+          printf(msg, "%s\n");
+        }
+      }
+      */
+
+
+
+
 
     return 0;
 };
@@ -105,45 +146,3 @@ char* recieveMessage(int socket, char* message){
 void sendMessage(int socket, char* message){
   send(socket, message, 1024,0);
 }
-
-
-
-/*
-int main (int argc, char *argv[])
-
-//Elemento 1 de argv será 1 si es server o 0 si es client
-
-  int socket;
-  if (*argv[1]== '1'){
-    printf("Server\n");
-    socket = initializeServer(IP, PORT);
-    int count = 0;
-    while (count<10) {
-      char* message = malloc(sizeof(char)*1024);
-      char* msg = recieveMessage(socket, message);
-      printf(msg, "%s\n");
-      printf("\nYour Message: ");
-      scanf("%s", msg);
-      printf("\n");
-      sendMessage(socket, msg);
-
-    }
-  }
-
-  else{
-    printf("Client\n");
-    socket = initializeClient(IP, PORT);
-    int count = 0;
-    while (count<10) {
-      char* message = malloc(sizeof(char)*1024);
-      printf("\nYour Message: ");
-      scanf("%s", message);
-      printf("\n");
-      sendMessage(socket, message);
-      char* msg = recieveMessage(socket, message);
-      printf(msg, "%s\n");
-
-    }
-
-  }
-  */
