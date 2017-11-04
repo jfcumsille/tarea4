@@ -1,15 +1,14 @@
-//
-// Created by zuri on 28-10-17.
-//
-
 #include <stdlib.h>
 #include <stdio.h>
+<<<<<<< HEAD
 #include <stddef.h>
 #include <locale.h>
+=======
+>>>>>>> master
 #include "functions.h"
 
 Piece* initPiece(int id, int color, int row, int col){
-    Piece* p = malloc(sizeof(Piece));
+    Piece* p = (Piece *)malloc(sizeof(Piece));
     p->id = id;
     p->color = color;
     p->row = row;
@@ -71,6 +70,7 @@ Board* initBoard(){
 wchar_t toASCII(Piece* piece){
     wchar_t ascii;
     if (piece->color == 0){
+
         if(piece->id == 1) ascii = L'\x256A';
         else if(piece->id == 2) ascii = L'\x256B';
         else if(piece->id == 3) ascii = L'\x256C';
@@ -88,6 +88,7 @@ wchar_t toASCII(Piece* piece){
     }
     return ascii;
 }
+
 
 void print_table(Board* tablero){
     setlocale(LC_ALL, "en_US.UTF-8");
