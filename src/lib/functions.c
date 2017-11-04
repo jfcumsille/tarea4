@@ -1,10 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
-<<<<<<< HEAD
 #include <stddef.h>
 #include <locale.h>
-=======
->>>>>>> master
 #include "functions.h"
 
 Piece* initPiece(int id, int color, int row, int col){
