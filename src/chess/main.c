@@ -13,11 +13,10 @@
 #define IP "0.0.0.0"
 #define PORT 8080
 
-int main(int argc, char argv[]){
+int main(int argc, char *argv[]){
 
     Board *b = initBoard();
     print_table(b);
-
     return 0;
 };
 
