@@ -92,9 +92,9 @@ wchar_t toASCII(Piece* piece){
 
 void print_table(Board* tablero){
     setlocale(LC_ALL, "en_US.UTF-8");
-    printf("\n\t  ________________________________\n");
+    printf("\n");
+    printf("\t |---|---|---|---|---|---|---|---|\n");
     for(int i=0;i<8;i++){
-        printf("\n");
         printf("\t |");
         for(int j=0;j<8;j++){
             if(!tablero->table[i][j]) printf("   |");
@@ -104,6 +104,7 @@ void print_table(Board* tablero){
             }
         }
         printf("\n");
+        printf("\t |---|---|---|---|---|---|---|---|\n");
     }
-    printf("\t ---------------------------------\n");
+    printf("\n");
 }

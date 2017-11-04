@@ -13,10 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ec01f34d-e7fa-4a67-a2ea-1e86280f5044" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chess" afterPath="$PROJECT_DIR$/chess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/chess/main.o" afterPath="$PROJECT_DIR$/obj/chess/main.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chess/main.c" afterPath="$PROJECT_DIR$/src/chess/main.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/lib/functions.o" afterPath="$PROJECT_DIR$/obj/lib/functions.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/functions.c" afterPath="$PROJECT_DIR$/src/lib/functions.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chess/main.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
@@ -48,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lib/functions.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2014">
-              <caret line="106" column="48" lean-forward="false" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
+            <state relative-caret-position="733">
+              <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
               <folding>
                 <element signature="e#39#58#0" expanded="true" />
               </folding>
@@ -79,8 +77,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/lib/functions.h" />
-        <option value="$PROJECT_DIR$/src/lib/functions.c" />
         <option value="$PROJECT_DIR$/src/chess/main.c" />
+        <option value="$PROJECT_DIR$/src/lib/functions.c" />
       </list>
     </option>
   </component>
@@ -177,12 +175,12 @@
       <workItem from="1509207625715" duration="148000" />
       <workItem from="1509207878595" duration="14720000" />
       <workItem from="1509667365819" duration="606000" />
-      <workItem from="1509819439894" duration="85000" />
+      <workItem from="1509819439894" duration="1925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15559000" />
+    <option name="totallyTimeSpent" value="17399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="259" y="24" width="1920" height="984" extended-state="6" />
@@ -326,22 +324,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/functions.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2014">
-          <caret line="106" column="48" lean-forward="false" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../T3/memv/src/memv/main.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-741">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -351,6 +339,16 @@
         <state relative-caret-position="57">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/functions.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
